@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos · PARCHIS</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img src="./imagenes/logo.png" alt="PARCHIS"></a>
+        <button class="hamburguesa" aria-label="Menú"><span></span><span></span><span></span></button>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html" class="activo">Productos</a></li>
+            <li><a href="contacto.html" class="menu-btn">Contacto</a></li>
+        </ul>
+    </header>
+
+    <!-- ====== BANNER PARALLAX ====== -->
+    <section class="banner-parallax" style="margin-top:76px">
+        <div class="contenido">
+            <h1>Nuestros productos</h1>
+            <p>Todo lo que tu bebé necesita, con mucho amor 🧸</p>
+        </div>
+    </section>
+
+    <!-- ====== CATÁLOGO ====== -->
+    <section class="seccion fondo-blanco">
+        <div class="seccion-titulo reveal"><h2>Catálogo</h2><p>Selecciona tus favoritos y añádelos al carrito.</p></div>
+        <div class="grid-cards">
+            <div class="producto reveal"><div class="foto fondo-rosa">🧷</div><div class="info"><h3>Pañales Ultra Suaves T-3</h3><div class="estrellas">★★★★★</div><div class="precio">$45.900</div><a href="#ficha" class="btn btn-rosa">Ver producto</a></div></div>
+            <div class="producto reveal"><div class="foto fondo-celeste">👕</div><div class="info"><h3>Body de algodón (pack x3)</h3><div class="estrellas">★★★★☆</div><div class="precio">$38.500</div><a href="#ficha" class="btn btn-celeste">Ver producto</a></div></div>
+            <div class="producto reveal"><div class="foto fondo-amarillo">🍼</div><div class="info"><h3>Biberon anti-cólicos 240ml</h3><div class="estrellas">★★★★★</div><div class="precio">$29.900</div><a href="#ficha" class="btn btn-lila">Ver producto</a></div></div>
+            <div class="producto reveal"><div class="foto fondo-lila">🧴</div><div class="info"><h3>Toallitas húmedas (x80)</h3><div class="estrellas">★★★★☆</div><div class="precio">$12.500</div><a href="#ficha" class="btn btn-rosa">Ver producto</a></div></div>
+            <div class="producto reveal"><div class="foto fondo-celeste">🧸</div><div class="info"><h3>Peluche osito suave</h3><div class="estrellas">★★★★★</div><div class="precio">$24.900</div><a href="#ficha" class="btn btn-celeste">Ver producto</a></div></div>
+            <div class="producto reveal"><div class="foto fondo-rosa">🧦</div><div class="info"><h3>Manta de bebé pastel</h3><div class="estrellas">★★★★☆</div><div class="precio">$33.000</div><a href="#ficha" class="btn btn-lila">Ver producto</a></div></div>
+            <div class="producto reveal"><div class="foto fondo-amarillo">🍭</div><div class="info"><h3>Chupones ortodónticos (x2)</h3><div class="estrellas">★★★★★</div><div class="precio">$15.900</div><a href="#ficha" class="btn btn-rosa">Ver producto</a></div></div>
+            <div class="producto reveal"><div class="foto fondo-lila">👟</div><div class="info"><h3>Zapatitos tejidos</h3><div class="estrellas">★★★★☆</div><div class="precio">$19.900</div><a href="#ficha" class="btn btn-celeste">Ver producto</a></div></div>
+        </div>
+    </section>
+
+    <!-- ====== FICHA DE PRODUCTO ====== -->
+    <section class="seccion fondo-lila" id="ficha">
+        <div class="ficha reveal">
+            <div class="galeria">
+                <div class="principal" id="foto-principal">🧷</div>
+                <div class="miniaturas">
+                    <div onclick="document.getElementById('foto-principal').textContent=this.textContent">🧷</div>
+                    <div onclick="document.getElementById('foto-principal').textContent=this.textContent">📦</div>
+                    <div onclick="document.getElementById('foto-principal').textContent=this.textContent">👶</div>
+                    <div onclick="document.getElementById('foto-principal').textContent=this.textContent">💜</div>
+                </div>
+            </div>
+            <div class="detalle">
+                <h1>Pañales Ultra Suaves · PARCHIS Baby</h1>
+                <div class="estrellas" style="color:#ffd766; font-size:1.3rem">★★★★★ <span style="color:var(--texto-suave); font-size:.9rem">(128 reseñas)</span></div>
+                <div class="precio-grande">$45.900</div>
+                <p class="impuesto">IVA incluido · Envío calculado al finalizar la compra.</p>
+                <p>Pañales ultra absorbentes con tecnología de canales de aire que mantienen la piel de tu bebé seca y suave hasta 12 horas. Hipoalergénicos, sin fragancias ni parabenos, con banda elástica que se ajusta con delicadeza.</p>
+
+                <div class="variantes">
+                    <span class="tit">Talla:</span>
+                    <span class="chip sel">T-1 (RN)</span>
+                    <span class="chip">T-2 (S)</span>
+                    <span class="chip">T-3 (M)</span>
+                    <span class="chip">T-4 (L)</span>
+                    <span class="chip">T-5 (XL)</span>
+                </div>
+                <div class="variantes">
+                    <span class="tit">Presentación / color del pack:</span>
+                    <span class="color-punto sel" style="background:#ff9ec2" title="Rosa"></span>
+                    <span class="color-punto" style="background:#8fcaff" title="Celeste"></span>
+                    <span class="color-punto" style="background:#b79bff" title="Lila"></span>
+                    <span class="color-punto" style="background:#ffd766" title="Amarillo"></span>
+                </div>
+
+                <div style="margin-top:1.6rem">
+                    <a href="#" class="btn btn-rosa">🛒 Añadir al carrito</a>
+                    <a href="#" class="btn btn-lila">Comprar ahora</a>
+                </div>
+
+                <div class="envio-info">
+                    <p>🚚 <strong>Envío:</strong> gratis en compras &gt; $80.000. Entrega en 24-48 h.</p>
+                    <p>↩️ <strong>Devoluciones:</strong> hasta 30 días, fáciles y sin costo.</p>
+                    <p>🔒 <strong>Pago seguro:</strong> tarjeta, PSE, contra entrega.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== RESEÑAS ====== -->
+    <section class="seccion fondo-celeste">
+        <div class="seccion-titulo reveal"><h2>Reseñas del producto</h2></div>
+        <div class="grid-cards">
+            <div class="testimonio reveal"><div class="estrellas" style="color:#ffd766">★★★★★</div><p>“Los mejores pañales que he probado, no se salen ni de noche.”</p><div class="autor"><div class="foto fondo-rosa">👩</div><div><strong>Camila T.</strong></div></div></div>
+            <div class="testimonio reveal"><div class="estrellas" style="color:#ffd766">★★★★★</div><p>“Mi bebé tiene piel sensible y no le han dado ninguna alergia.”</p><div class="autor"><div class="foto fondo-celeste">👨</div><div><strong>Jorge L.</strong></div></div></div>
+            <div class="testimonio reveal"><div class="estrellas" style="color:#ffd766">★★★★☆</div><p>“Muy suaves y buen precio. Repetiré sin dudarlo.”</p><div class="autor"><div class="foto fondo-amarillo">👵</div><div><strong>Inés P.</strong></div></div></div>
+        </div>
+    </section>
+
+    <!-- ====== PRODUCTOS RELACIONADOS ====== -->
+    <section class="seccion fondo-blanco">
+        <div class="seccion-titulo reveal"><h2>También te puede gustar</h2></div>
+        <div class="grid-cards">
+            <div class="producto reveal"><div class="foto fondo-lila">🧴</div><div class="info"><h3>Toallitas húmedas (x80)</h3><div class="precio">$12.500</div></div></div>
+            <div class="producto reveal"><div class="foto fondo-amarillo">🧴</div><div class="info"><h3>Crema anti-paspaduras</h3><div class="precio">$18.000</div></div></div>
+            <div class="producto reveal"><div class="foto fondo-celeste">👕</div><div class="info"><h3>Body de algodón (pack x3)</h3><div class="precio">$38.500</div></div></div>
+            <div class="producto reveal"><div class="foto fondo-rosa">🧸</div><div class="info"><h3>Peluche osito suave</h3><div class="precio">$24.900</div></div></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col footer-logo"><img src="./imagenes/logo.png" alt="PARCHIS"><p>Suavidad y amor desde el primer día. Tu tienda infantil y pañalera de confianza.</p><div class="redes"><a href="#">f</a><a href="#">📷</a><a href="#">💬</a><a href="#">♪</a></div></div>
+            <div class="footer-col"><h4>Navegación</h4><a href="index.html">Inicio</a><a href="nosotros.html">Nosotros</a><a href="servicios.html">Servicios</a><a href="productos.html">Productos</a></div>
+            <div class="footer-col"><h4>Legal</h4><a href="#">Política de privacidad</a><a href="#">Términos y condiciones</a><a href="#">Política de cookies</a><a href="#">Preguntas frecuentes</a></div>
+             <div class="footer-col"><h4>Contacto</h4><p>📍 Cra 9 con calle 20, por toda la principal</p><p>📞 +57 3229401033</p><p>✉️ luzdennisrojasm@gmail.com</p><p>🕒 todos los dias hasta las 8pm</p></div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 PARCHIS — Tienda Infantil y Pañalera. Todos los derechos reservados.</div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
